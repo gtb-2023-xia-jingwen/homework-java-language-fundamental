@@ -1,14 +1,20 @@
 name: gtb sonar
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - master
 
 jobs:
   sonar:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v2
       - name: prepare gradle env
         run: |
+          cat settings.gradle | grep 'rootProject.name' > settings.gradle.bak
+          mv settings.gradle.bak settings.gradle
           mkdir ~/.gradle && touch ~/.gradle/gradle.properties
           {
             echo "systemProp.gtb.sonar.host.url=${{ secrets.SONAR_ADDRESS }}"
@@ -19,8 +25,28 @@ jobs:
       - uses: actions/setup-java@v1
         with:
           java-version: '11'
-      - uses: eskatos/gradle-command-action@v1
+      - name: Cache gradle dependencies
+        uses: actions/cache@v2
         with:
-          arguments: sonarqube
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+      - name: Cache sonar scanners
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-sonar-scanners
+        with:
+          path: ~/.sonar
+          key: ${{ runner.os }}-sonar-scanner-${{ env.cache-name }}
+          restore-keys: |
+            ${{ runner.os }}-sonar-scanner-
+      - name: Sonar scan
+        run: |
+          ./gradlew sonarqube -x test
+
+
 
 
