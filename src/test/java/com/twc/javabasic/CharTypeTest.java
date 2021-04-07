@@ -3,7 +3,8 @@ package com.twc.javabasic;
 import com.twc.javabasic.util.EscapedChars;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CharTypeTest {
     @Test
@@ -30,21 +31,6 @@ class CharTypeTest {
         assertEquals(EscapedChars.DOUBLE_QUOTE.getValue(), doubleQuote);
         assertEquals(EscapedChars.SINGLE_QUOTE.getValue(), singleQuote);
         assertEquals(EscapedChars.BACKSLASH.getValue(), backslash);
-    }
-
-    @Test
-    void should_get_return_characters_for_different_os() {
-        // TODO: Please get the line-break character(s) depending on the OS.
-        //
-        // <-start-
-        String linebreak = null;
-        // --end->
-
-        String os = System.getProperty("os.name").toLowerCase();
-        if (isWindows(os)) { assertEquals("\r\n", linebreak); }
-        else if (isMac(os)) { assertEquals("\n", linebreak); }
-        else if (isUnix(os)) { assertEquals("\n", linebreak); }
-        else { fail("I don't know what your os is: " + os); }
     }
 
     @Test
