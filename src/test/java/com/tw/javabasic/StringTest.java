@@ -47,7 +47,6 @@ class StringTest {
     @Test
     void will_create_new_string_when_concat() {
         String originalString = "Part one. ";
-        String copyOfOriginalString = originalString;
         originalString += "Part two.";
 
         // TODO:
@@ -197,35 +196,6 @@ class StringTest {
     }
 
     @Test
-    void should_get_code_point_count() {
-        final String withSurrogatePairs =
-                new String(Character.toChars(0x20B9F)) + " is a character that you may not know";
-
-        // TODO: please modify the following code to pass the test
-        // <--start
-        // TODO: please write down the result directly.
-        final int expectedCharLength = Integer.MAX_VALUE;
-        // TODO: please call some method to calculate the result.
-        final int actualCodePointLength = withSurrogatePairs.length();
-        // --end-->
-
-        assertEquals(expectedCharLength, withSurrogatePairs.length());
-        assertEquals(38, actualCodePointLength);
-    }
-
-    @Test
-    void should_copy_all_code_point_to_array() {
-        final String withSurrogatePairs =
-                new String(Character.toChars(0x20B9F)) + " is funny";
-
-        final int[] codePoints = getCodePointsFromString(withSurrogatePairs);
-
-        assertArrayEquals(
-                new int[] {0x20B9F, (int)' ', (int)'i', (int)'s', (int)' ', (int)'f', (int)'u', (int)'n', (int)'n', (int)'y'},
-                codePoints);
-    }
-
-    @Test
     void should_format_string() {
         final String name = "Harry";
         final int age = 23;
@@ -238,13 +208,6 @@ class StringTest {
         // --end-->
 
         assertEquals(expectedText, text);
-    }
-
-    private int[] getCodePointsFromString(String withSurrogatePairs) {
-        // TODO: please implement the method to the pass the test
-        // <--start
-        throw new RuntimeException("Not implemented");
-        // --end-->
     }
 
     /*
