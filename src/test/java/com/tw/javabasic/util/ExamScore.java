@@ -1,4 +1,4 @@
-package com.twc.javabasic.util;
+package com.tw.javabasic.util;
 
 public class ExamScore {
     private final double testCases;

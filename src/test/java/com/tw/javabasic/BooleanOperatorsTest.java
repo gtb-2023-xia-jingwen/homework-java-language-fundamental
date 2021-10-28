@@ -1,6 +1,6 @@
-package com.twc.javabasic;
+package com.tw.javabasic;
 
-import com.twc.javabasic.util.ExamScore;
+import com.tw.javabasic.util.ExamScore;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

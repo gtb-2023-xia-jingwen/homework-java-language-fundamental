@@ -1,4 +1,4 @@
-package com.twc.javabasic.util;
+package com.tw.javabasic.util;
 
 public class SimpleObjectWithInternalState {
     private String name;

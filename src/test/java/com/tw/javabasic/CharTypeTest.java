@@ -1,6 +1,7 @@
-package com.twc.javabasic;
+package com.tw.javabasic;
 
-import com.twc.javabasic.util.EscapedChars;
+import com.tw.javabasic.util.EscapedChars;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
@@ -24,7 +25,7 @@ class CharTypeTest {
         final char backslash = ' ';
         // --end-->
 
-        assertEquals(EscapedChars.BACKSPACE.getValue(), backspace);
+        Assertions.assertEquals(EscapedChars.BACKSPACE.getValue(), backspace);
         assertEquals(EscapedChars.TAB.getValue(), tab);
         assertEquals(EscapedChars.LINE_FEED.getValue(), lineFeed);
         assertEquals(EscapedChars.CARRIAGE_RETURN.getValue(), carriageReturn);
