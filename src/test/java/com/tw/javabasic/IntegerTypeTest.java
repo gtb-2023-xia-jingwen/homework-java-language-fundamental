@@ -1,9 +1,9 @@
 package com.tw.javabasic;
 
-import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+
+import org.junit.jupiter.api.Test;
 
 class IntegerTypeTest {
     // Recommended time used: 25 min
@@ -35,7 +35,6 @@ class IntegerTypeTest {
         assertEquals(expectedResult, theNumberWillUnderflow);
     }
 
-    @SuppressWarnings("ResultOfMethodCallIgnored")
     @Test
     void should_throw_exception_when_overflow() {
         int theNumberWillOverflow = Integer.MAX_VALUE;

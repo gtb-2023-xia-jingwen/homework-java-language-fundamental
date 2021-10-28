@@ -1,18 +1,16 @@
 package com.tw.javabasic;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.tw.javabasic.util.CallingAnotherCtor;
 import com.tw.javabasic.util.FieldNotExplicitlyInitialized;
 import com.tw.javabasic.util.InitializationOrderClass;
 import com.tw.javabasic.util.OverloadingFixture;
 import com.tw.javabasic.util.SimpleObjectWithInternalState;
-import com.twc.javabasic.util.*;
-import org.junit.jupiter.api.Test;
-
 import java.time.LocalDate;
 import java.util.Optional;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 
 class ObjectTest {
     // Recommended time used: 60 min
@@ -51,7 +49,6 @@ class ObjectTest {
         assertEquals(expected.get(), referenceToSameObject);
     }
 
-    @SuppressWarnings("ConstantConditions")
     @Test
     void should_initialized_to_default_value() {
         FieldNotExplicitlyInitialized instance = new FieldNotExplicitlyInitialized();

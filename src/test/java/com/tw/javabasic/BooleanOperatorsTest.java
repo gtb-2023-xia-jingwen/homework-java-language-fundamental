@@ -1,9 +1,12 @@
 package com.tw.javabasic;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import com.tw.javabasic.util.ExamScore;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 class BooleanOperatorsTest {
     // Recommended time used: 8 min

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class InitializationOrderClass {
-    private static List<String> logger = new ArrayList<>();
+    private static final List<String> logger = new ArrayList<>();
 
     public static void resetLogs() {
         logger.clear();
@@ -21,7 +21,7 @@ public class InitializationOrderClass {
         return null;
     }
 
-    {
+    static {
         logger.add("Initialization Block");
     }
 

@@ -1,10 +1,14 @@
 package com.tw.javabasic.util;
 
+import java.util.Objects;
+
 public class SimpleObjectWithInternalState {
     private String name;
 
     public SimpleObjectWithInternalState(String name) {
-        if (name == null) throw new IllegalArgumentException();
+        if (Objects.isNull(name)) {
+            throw new IllegalArgumentException();
+        }
         this.name = name;
     }
 

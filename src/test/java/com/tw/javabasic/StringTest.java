@@ -1,11 +1,11 @@
 package com.tw.javabasic;
 
-import org.junit.jupiter.api.Test;
-
-import java.util.Optional;
-
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+
+import java.util.Optional;
+import org.junit.jupiter.api.Test;
 
 class StringTest {
     // Recommended time used: 45 min
@@ -44,7 +44,6 @@ class StringTest {
         assertEquals(areSame, originalString == modifiedString);
     }
 
-    @SuppressWarnings("StringEquality")
     @Test
     void will_create_new_string_when_concat() {
         String originalString = "Part one. ";
@@ -59,7 +58,7 @@ class StringTest {
         // --end-->
 
         assertEquals("Part one. Part two.", originalString);
-        assertEquals(areSame, originalString == copyOfOriginalString);
+        assertFalse(areSame);
     }
 
     @SuppressWarnings("unused")
@@ -141,8 +140,8 @@ class StringTest {
 
         final String expected =
                 "|---|\n" +
-                        "|   |\n" +
-                        "|---|\n";
+                "|   |\n" +
+                "|---|\n";
 
         assertEquals(expected, builder.toString());
     }
