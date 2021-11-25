@@ -21,7 +21,7 @@ public class InitializationOrderClass {
         return null;
     }
 
-    static {
+    {
         logger.add("Initialization Block");
     }
 
