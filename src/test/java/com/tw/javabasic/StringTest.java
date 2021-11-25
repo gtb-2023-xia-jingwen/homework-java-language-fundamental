@@ -30,8 +30,8 @@ class StringTest {
     @SuppressWarnings({"StringEquality", "ConstantConditions"})
     @Test
     void all_modification_method_will_create_new_string() {
-        String originalString = "The string with tailing space.     ";
-        String modifiedString = originalString.trim();
+        String originalString = "     The string with tailing space.";
+        String modifiedString = originalString.stripLeading();
 
         // TODO:
         //  Please modify the following line to pass the test. It is really easy to pass
