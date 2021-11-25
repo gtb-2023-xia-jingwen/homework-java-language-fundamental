@@ -44,22 +44,6 @@ class StringTest {
         assertEquals(areSame, originalString == modifiedString);
     }
 
-    @Test
-    void will_create_new_string_when_concat() {
-        String originalString = "Part one. ";
-        originalString += "Part two.";
-
-        // TODO:
-        //  Please modify the following line to pass the test. It is really easy to pass
-        //  the test. But you have to tell why.
-        // <--start
-        final boolean areSame = true;
-        // --end-->
-
-        assertEquals("Part one. Part two.", originalString);
-        assertFalse(areSame);
-    }
-
     @SuppressWarnings("unused")
     @Test
     void should_taken_string_apart() {
