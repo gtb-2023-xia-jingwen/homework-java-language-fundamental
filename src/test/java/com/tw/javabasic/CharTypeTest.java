@@ -1,7 +1,7 @@
 package com.tw.javabasic;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.fail;
 
 import com.tw.javabasic.util.EscapedChars;
 import org.junit.jupiter.api.Assertions;
@@ -35,16 +35,18 @@ class CharTypeTest {
     }
 
     @Test
-    void should_get_unicode_value_of_a_character() {
-        final Character[] characters = {'a', 'b', '\u042A'};
-
-        // TODO: Get UTF-16 value (in basic plane) of a character.
+    void should_get_return_characters_for_different_os() {
+        // TODO: Please fill out the line-break character(s) depending on your OS.
         //
         // <-start-
-        int[] values = null;
+        String linebreak = "";
         // --end->
 
-        assertArrayEquals(new int[] {97, 98, 0x42a}, values);
+        String os = System.getProperty("os.name").toLowerCase();
+        if (isWindows(os)) { assertEquals("\r\n", linebreak); }
+        else if (isMac(os)) { assertEquals("\n", linebreak); }
+        else if (isUnix(os)) { assertEquals("\n", linebreak); }
+        else { fail("I don't know what your os is: " + os); }
     }
 
     public static boolean isWindows(String os) { return (os.contains("win")); }

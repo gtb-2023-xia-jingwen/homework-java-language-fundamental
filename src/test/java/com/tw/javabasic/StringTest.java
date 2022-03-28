@@ -131,22 +131,6 @@ class StringTest {
 
     @SuppressWarnings("unused")
     @Test
-    void should_calculate_checksum_of_a_string() {
-        final String text = "A quick brown fox jumps over a lazy dog.";
-
-        int sum = 0;
-        // TODO:
-        //  Write some code to calculate the checksum of the string. The checksum is the
-        //  sum of each string char.
-        // <--Start
-
-        // --End-->
-
-        assertEquals(3655, sum);
-    }
-
-    @SuppressWarnings("unused")
-    @Test
     void should_reverse_a_string() {
         final String original = "123456";
 
@@ -165,14 +149,14 @@ class StringTest {
         final String upperCased = "HELLO";
         final String lowerCased = "hello";
 
-        Optional<Boolean> equalResult = Optional.of(upperCased.equals(lowerCased));
-        Optional<Boolean> equalIgnoreCaseResult = Optional.of(upperCased.equalsIgnoreCase(lowerCased));
+        final boolean equalResult = upperCased.equals(lowerCased);
+        final boolean equalIgnoreCaseResult = upperCased.equalsIgnoreCase(lowerCased);
 
         // TODO:
         //  Please change the value of the following 2 lines to pass the test.
         // <--start
-        Optional<Boolean> actualResultOfEqual = Optional.empty();
-        Optional<Boolean> actualResultOfEqualIgnoreCase = Optional.empty();
+        final boolean actualResultOfEqual = false;
+        final boolean actualResultOfEqualIgnoreCase = false;
         // --end-->
 
         assertEquals(equalResult, actualResultOfEqual);
