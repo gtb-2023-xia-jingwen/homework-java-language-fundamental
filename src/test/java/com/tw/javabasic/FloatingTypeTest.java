@@ -63,6 +63,9 @@ class FloatingTypeTest {
         // TODO:
         //  please implement the method to pass the test. It is better you call existing
         //  API rather than implemented yourself.
+        //
+        // Hint:
+        //  Please check methods in Double class.
         // <!--start
         throw new RuntimeException("Not implemented");
         // --end-->
@@ -73,6 +76,9 @@ class FloatingTypeTest {
         // TODO:
         //  please implement the method to pass the test. It is better you call existing
         //  API rather than implemented yourself.
+        //
+        // Hint:
+        //  Please check methods in Double class.
         // <!--start
         throw new RuntimeException("Not implemented");
         // --end-->
