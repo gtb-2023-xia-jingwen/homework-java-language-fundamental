@@ -26,10 +26,10 @@ class ObjectTest {
         // TODO:
         //  Please write down your answer directly.
         // <--start
-        final Optional<Boolean> expected = Optional.empty();
+        final boolean expected = false;
         // --end-->
 
-        assertEquals(expected.get(), referenceToSameObject);
+        assertEquals(expected, referenceToSameObject);
     }
 
     @SuppressWarnings("NewObjectEquality")
@@ -43,10 +43,10 @@ class ObjectTest {
         // TODO:
         //  Please write down your answer directly.
         // <--start
-        final Optional<Boolean> expected = Optional.empty();
+        final boolean expected = true;
         // --end-->
 
-        assertEquals(expected.get(), referenceToSameObject);
+        assertEquals(expected, referenceToSameObject);
     }
 
     @Test

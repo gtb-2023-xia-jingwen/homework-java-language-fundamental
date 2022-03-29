@@ -23,10 +23,10 @@ class InnerClassTest {
         // Hint:
         //  If you want some references, please check page 331 of "Core Java Vol 1", section 6.4.1.
         // <--start
-        final Optional<Integer> expected = Optional.empty();
+        final Integer expected = null;
         // --end-->
 
-        assertEquals(expected.get().intValue(), instance.getYear());
+        assertEquals(expected, instance.getYear());
     }
 
     @Test
@@ -42,10 +42,10 @@ class InnerClassTest {
         // Hint:
         //  And if you want some references, please check page 334 of "Core Java Vol 1", section 6.4.2.
         // <--start
-        final Optional<Integer> expected = Optional.empty();
+        final Integer expected = null;
         // --end-->
 
-        assertEquals(expected.get().intValue(), instance.getYear());
+        assertEquals(expected, instance.getYear());
     }
 
     @Test
@@ -60,10 +60,10 @@ class InnerClassTest {
         //  And if you want some references, please check page 331 of "Core Java Vol 1", section 6.4.1.
         //  and page 339, section 6.4.4.
         // <--start
-        final Optional<Integer> expected = Optional.empty();
+        final Integer expected = null;
         // --end-->
 
-        assertEquals(expected.get().intValue(), instance.getYear());
+        assertEquals(expected, instance.getYear());
     }
 
     @Test
@@ -77,10 +77,10 @@ class InnerClassTest {
         // Hint:
         //  And if you want some references, please check page 342 of "Core Java Vol 1", section 6.4.6.
         // <--start
-        final Optional<Integer> expected = Optional.empty();
+        final Integer expected = null;
         // --end-->
 
-        assertEquals(expected.get().intValue(), instance.getYear());
+        assertEquals(expected, instance.getYear());
     }
 
     @Test

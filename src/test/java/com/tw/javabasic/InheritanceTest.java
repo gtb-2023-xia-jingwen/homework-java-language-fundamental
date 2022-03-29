@@ -134,10 +134,10 @@ class InheritanceTest {
         // Hint:
         //  If you meet difficulties, you can refer to page 213 of "Core Java Vol 1", section 5.1.5.
         // <--start
-        final Optional<Boolean> expected = Optional.empty();
+        final boolean expected = false;
         // --end-->
 
-        assertEquals(expected.get(), willThrow);
+        assertEquals(expected, willThrow);
     }
 
     @SuppressWarnings("UnnecessaryLocalVariable")
@@ -179,14 +179,14 @@ class InheritanceTest {
         // Hint:
         //  If you find it difficult, please refer to page 220 of "Java Core Vol 1", section 5.1.8.
         // <--start
-        final Optional<Boolean> expectedResult1 = Optional.empty();
-        final Optional<Boolean> expectedResult2 = Optional.empty();
-        final Optional<Boolean> expectedResult3 = Optional.empty();
+        final boolean expectedResult1 = false;
+        final boolean expectedResult2 = false;
+        final boolean expectedResult3 = false;
         // --end-->
 
-        assertEquals(expectedResult1.get(), nested instanceof NestedDerivedClassWithName);
-        assertEquals(expectedResult2.get(), nested instanceof DerivedFromBaseClassWithName);
-        assertEquals(expectedResult3.get(), nested instanceof BaseClassWithName);
+        assertEquals(expectedResult1, nested instanceof NestedDerivedClassWithName);
+        assertEquals(expectedResult2, nested instanceof DerivedFromBaseClassWithName);
+        assertEquals(expectedResult3, nested instanceof BaseClassWithName);
     }
 
     @SuppressWarnings({"ConstantConditions", "UnnecessaryBoxing"})
@@ -200,12 +200,12 @@ class InheritanceTest {
         // Hint:
         //  If you find it difficult, please refer to page 220 of "Java Core Vol 1", section 5.1.8.
         // <--start
-        final Optional<Boolean> expectedResult1 = Optional.empty();
-        final Optional<Boolean> expectedResult2 = Optional.empty();
+        final boolean expectedResult1 = false;
+        final boolean expectedResult2 = true;
         // --end-->
 
-        assertEquals(expectedResult1.get(), integer instanceof Integer );
-        assertEquals(expectedResult2.get(), integer instanceof Long );
+        assertEquals(expectedResult1, integer instanceof Integer );
+        assertEquals(expectedResult2, integer instanceof Long );
     }
 
     @SuppressWarnings({"SimplifiableJUnitAssertion", "EqualsWithItself"})
@@ -220,6 +220,7 @@ class InheritanceTest {
     @SuppressWarnings("SimplifiableJUnitAssertion")
     @Test
     void should_write_perfect_equals_2() {
+        // Please open PersonForEquals.java
         PersonForEquals person = new PersonForEquals("James", (short) 1990);
         PersonForEquals samePerson = new PersonForEquals("James", (short) 1990);
 
@@ -230,6 +231,7 @@ class InheritanceTest {
     @SuppressWarnings("SimplifiableJUnitAssertion")
     @Test
     void should_write_perfect_equals_3() {
+        // Please open PersonForEquals.java
         PersonForEquals person = new PersonForEquals("James", (short) 1990);
         PersonForEquals samePerson = new PersonForEquals("James", (short) 1990);
         PersonForEquals stillTheSamePerson = new PersonForEquals("James", (short) 1990);
@@ -242,16 +244,19 @@ class InheritanceTest {
     @SuppressWarnings({"ConstantConditions", "ObjectEqualsNull", "SimplifiableJUnitAssertion"})
     @Test
     void should_write_perfect_equals_4() {
+        // Please open PersonForEquals.java
         PersonForEquals person = new PersonForEquals("James", (short) 1990);
 
+        //assertEquals(null, person);
         assertFalse(person.equals(null));
     }
 
     @SuppressWarnings({"EqualsBetweenInconvertibleTypes", "SimplifiableJUnitAssertion", "UnnecessaryBoxing"})
     @Test
     void should_write_perfect_equals_5() {
+        // Please open PersonForEquals.java
         PersonForEquals person = new PersonForEquals("James", (short) 1990);
-        Integer instanceWithOtherType = new Integer(1990);
+        Integer instanceWithOtherType = 1990;
 
         assertFalse(person.equals(instanceWithOtherType));
     }
@@ -259,6 +264,7 @@ class InheritanceTest {
     @SuppressWarnings("SimplifiableJUnitAssertion")
     @Test
     void should_write_perfect_equals_6() {
+        // Please open PersonForEquals.java
         PersonForEquals person = new PersonForEquals("James", (short) 1990);
         PersonForEquals different = new PersonForEquals("James", (short) 1991);
 
@@ -268,6 +274,7 @@ class InheritanceTest {
 
     @Test
     void should_write_perfect_equals_7() {
+        // Please open PersonForEquals.java
         PersonForEquals person = new PersonForEquals("James", (short) 1990);
         PersonForEquals different1 = new PersonForEquals("James", (short) 1991);
         PersonForEquals different2 = new PersonForEquals("Harry", (short) 1990);

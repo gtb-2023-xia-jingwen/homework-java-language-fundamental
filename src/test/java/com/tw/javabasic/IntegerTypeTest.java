@@ -14,6 +14,9 @@ class IntegerTypeTest {
 
         // TODO:
         //  Please correct the value to pass the test. You should write the result directly.
+        //
+        // Hint:
+        //  If you find it difficult, please check "Core Java Vol 1", section 3.3.1
         // <--start
         final int expectedResult = 0;
         // --end-->
