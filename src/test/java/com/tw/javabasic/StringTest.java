@@ -36,6 +36,9 @@ class StringTest {
         // TODO:
         //  Please modify the following line to pass the test. It is really easy to pass
         //  the test. But you have to tell why.
+        //
+        // Hint:
+        //  If you find it difficult, please check https://www.javaprogramto.com/2019/02/Java-11-String-strip.html.
         // <--start
         final boolean areSame = true;
         // --end-->
@@ -51,6 +54,9 @@ class StringTest {
 
         // TODO:
         //  Take part of the original string according to expectation.
+        //
+        // Hint:
+        //  If you find it difficult, please check page 60 of "Core Java Vol 1", section 3.6.1.
         // <--start
         final String partOfString = null;
         // --end-->
@@ -67,6 +73,9 @@ class StringTest {
 
         // TODO:
         //  Take part of the original string according to expectation.
+        //
+        // Hint:
+        //  If you find it difficult, please check page 60 of "Core Java Vol 1", section 3.6.1
         // <--start
         final String partOfString = null;
         // --end-->
@@ -90,6 +99,9 @@ class StringTest {
         final String sentence = "This is Mike";
 
         // TODO: Extract words in the sentence.
+        //
+        // Hint:
+        //  If you find it difficult, please check https://www.baeldung.com/string/split.
         // <--Start
         String[] words = null;
         // --End-->
@@ -117,6 +129,9 @@ class StringTest {
         final int height = 3;
 
         // TODO: Create string using StringBuilder
+        //
+        // Hint:
+        //  If you find it difficult, please check page 60 of "Core Java Vol 1", section 3.6.9
         // <--Start
         StringBuilder builder = new StringBuilder();
         // --End-->
@@ -136,6 +151,9 @@ class StringTest {
 
         // TODO:
         //  Modify the following code to create new string from original String
+        //
+        // Hint:
+        //  If you find it difficult, please check https://www.baeldung.com/java-reverse-string.
         // <--Start
         final String reversed = null;
         // --End-->
@@ -171,6 +189,9 @@ class StringTest {
         String text = String.format("Hello, %s. Next year, you will be %d.", name, age);
 
         // TODO: please modify the following code to pass the test
+        //
+        // Hint:
+        //  If you meet difficulties, please refer to "Core Java Vol 1", section 3.7.2.
         // <--start
         final String expectedText = "";
         // --end-->

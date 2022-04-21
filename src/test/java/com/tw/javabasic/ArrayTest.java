@@ -14,6 +14,9 @@ class ArrayTest {
         // TODO: Please allocate a new array whose length is 10 and copy the
         //   original array into the new array. You should not use `for` or
         //   other kind of loops explicitly.
+        //
+        // Hint:
+        //  If you meet difficulties, please refer to "Core Java Vol 1", section 3.10.4.
         // <--start
 
         // -end->
@@ -32,6 +35,9 @@ class ArrayTest {
 
         // TODO: Please slice the original array into two array objects. You should
         //   not use `for` or other kind of loop explicitly.
+        //
+        // Hint:
+        //  If you meet difficulties, please refer to https://www.baeldung.com/java-array-copy.
         // <--start
 
         // -end->
@@ -48,6 +54,9 @@ class ArrayTest {
         // TODO: Please iterate over an array and turn each element into its string
         //   representation. You should use loop to do iteration. You should not
         //   using Stream API.
+        //
+        // Hint:
+        //  If you meet difficulties, please refer to https://www.baeldung.com/java-iterate-list.
         // <-start-
 
         // --end->
@@ -62,6 +71,9 @@ class ArrayTest {
 
         // TODO: Please reverse the array to a new one. You should not modify original
         //   array.
+        //
+        // Hint:
+        //  If you meet difficulties, please refer to https://www.baeldung.com/java-invert-array.
         // <--start-
 
         // --end->

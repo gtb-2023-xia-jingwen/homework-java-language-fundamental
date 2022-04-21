@@ -25,6 +25,9 @@ class CollectionsTest {
 
         String[] array = null;
         // TODO: Please turn array collection into string arrays.
+        //
+        // Hint:
+        //  If you meet difficulties, please refer to https://www.baeldung.com/java-collection-toarray-methods.
         // <-start-
 
         // --end-->
@@ -40,6 +43,9 @@ class CollectionsTest {
 
         // TODO: Remove duplications in `listWithDuplication` and please reserve the
         //   original order. You should not use Streaming API.
+        //
+        // Hint:
+        //  If you meet difficulties, please refer to "Core Java Vol 1", section 9.1.3.
         // <-start-
 
         // --end->
@@ -82,6 +88,9 @@ class CollectionsTest {
 
         // TODO: Please sort the list in-place. You should use existed method to
         //   do sorting work. You should not use Streaming API.
+        //
+        // Hint:
+        //  If you meet difficulties, please refer to https://www.baeldung.com/java-sorting.
         // <-start-
 
         // --end-->
@@ -120,7 +129,16 @@ class CollectionsTest {
 
         // TODO: create a histogram with statistics of all occurrence of English letters
         //   case insensitive. You should not using Streaming API.
+        // Hint
+        // 1.Every letter is alphabetic, but not every alphabetic is a letter.
+        // 2.In Java 7 (which users unicode 6.0.0), there are 824 characters
+        // in the BMP which are alphabetic but not letters.
+        // 3.For English text, the distinction makes no difference.
+        // 4.If one has a choice, the best answer may be isLetter().
+        // 5.For example, isAlphabetic('\u2165') = true, isLetter('\u2165') = false (\u2165 => VI )
+        // https://juejin.cn/post/6844903446349512712#heading-5
         // <-start-
+
 
         // --end->
 
