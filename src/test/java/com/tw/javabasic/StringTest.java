@@ -24,7 +24,7 @@ class StringTest {
         // --end-->
 
         assertEquals("The new string", modifiedString);
-        assertEquals(areSame, originalString == modifiedString);
+        assertEquals(areSame, originalString.equals(modifiedString));
     }
 
     @SuppressWarnings({"StringEquality", "ConstantConditions"})
@@ -44,7 +44,7 @@ class StringTest {
         // --end-->
 
         assertEquals("The string with tailing space.", modifiedString);
-        assertEquals(areSame, originalString == modifiedString);
+        assertEquals(areSame, originalString.equals(modifiedString));
     }
 
     @SuppressWarnings("unused")
