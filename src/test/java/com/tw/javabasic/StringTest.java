@@ -139,6 +139,14 @@ class StringTest {
         //  If you find it difficult, please check page 60 of "Core Java Vol 1", section 3.6.9
         // <--Start
         StringBuilder builder = new StringBuilder();
+        for(int h = 0; h < height; h++) {
+            for (int w = 0; w < width; w++) {
+                if (w == 0 || w == width - 1) builder.append("|");
+                else if(h == 0 || h == height - 1) builder.append("-");
+                else builder.append(" ");
+            }
+            builder.append("\n");
+        }
         // --End-->
 
         final String expected =
