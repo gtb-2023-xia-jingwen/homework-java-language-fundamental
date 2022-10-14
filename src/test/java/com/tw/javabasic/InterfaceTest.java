@@ -21,7 +21,7 @@ class InterfaceTest {
         // Hint:
         //  If you find it difficult, please check page 298 of "Core Java Vol 1", section 6.1.5.
         // <--start
-        final String expected = "";
+        final String expected = "The truth of the universe is 42";
         // --end-->
 
         assertEquals(expected, instance.tellMeTheTruthOfTheUniverse());
