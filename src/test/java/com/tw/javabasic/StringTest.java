@@ -108,7 +108,7 @@ class StringTest {
         // Hint:
         //  If you find it difficult, please check https://www.baeldung.com/string/split.
         // <--Start
-        String[] words = null;
+        String[] words = sentence.split(" ");
         // --End-->
 
         assertArrayEquals(new String[] {"This", "is", "Mike"}, words);
