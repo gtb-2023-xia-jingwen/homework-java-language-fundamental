@@ -81,7 +81,7 @@ class ObjectTest {
         // Hint
         //  If you find it difficult, please check page 164 of "Core Java Vol 1", section 4.5.
         // <--start
-        final int expected = Integer.MAX_VALUE;
+        final int expected = 5;
         // --end-->
 
         assertEquals(expected, value);
