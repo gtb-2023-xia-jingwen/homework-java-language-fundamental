@@ -19,6 +19,9 @@ class ArrayTest {
         //  If you meet difficulties, please refer to "Core Java Vol 1", section 3.10.4.
         // <--start
 
+        newArray = new int[10];
+        System.arraycopy(originalArray, 0, newArray, 0, originalArray.length);
+
         // -end->
 
         assertArrayEquals(
