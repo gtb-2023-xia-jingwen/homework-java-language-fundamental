@@ -138,7 +138,7 @@ class InheritanceTest {
         // Hint:
         //  If you meet difficulties, you can refer to page 213 of "Core Java Vol 1", section 5.1.5.
         // <--start
-        final boolean expected = false;
+        final boolean expected = true;
         // --end-->
 
         assertEquals(expected, willThrow);
