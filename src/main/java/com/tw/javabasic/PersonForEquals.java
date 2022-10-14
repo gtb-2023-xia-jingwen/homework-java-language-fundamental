@@ -47,9 +47,18 @@ public class PersonForEquals {
         //
         //  You can refer to page 229 of "Core Java Vol 1", section 5.2.1 and 5.2.2
         // <--start
-        throw new RuntimeException("Not implemented");
+
+        if (obj == this) return true;
+        if (!(obj instanceof PersonForEquals)) return false;
+        PersonForEquals p = (PersonForEquals) obj;
+        boolean nameEquals = (this.name == null && p.name == null)
+                || (this.name != null && this.name.equals(p.name));
+        boolean yearOfBirthEquals = this.yearOfBirth == p.yearOfBirth;
+        return nameEquals && yearOfBirthEquals;
+
         // --end-->
     }
+
 
     @Override
     public int hashCode() {
