@@ -195,7 +195,7 @@ class StringTest {
         //  Please change the value of the following 2 lines to pass the test.
         // <--start
         final boolean actualResultOfEqual = false;
-        final boolean actualResultOfEqualIgnoreCase = false;
+        final boolean actualResultOfEqualIgnoreCase = true;
         // --end-->
 
         assertEquals(equalResult, actualResultOfEqual);
