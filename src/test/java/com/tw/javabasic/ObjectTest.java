@@ -197,7 +197,8 @@ class ObjectTest {
         // Hint
         //  If you find it difficult, please check page 172 of "Core Java Vol 1", section 4.6
         // <--start
-        final String[] expected = {};
+        final String[] expected = { "Field Initializer", "Initialization Block",
+                                    "Constructor with argument", "Default constructor"};
         // --end-->
 
         assertArrayEquals(expected, logs);
