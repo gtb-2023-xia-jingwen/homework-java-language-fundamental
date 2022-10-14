@@ -77,7 +77,7 @@ class RegexTest {
         //  Please create an expression which extract something that begins with a
         //  word character, following with a white space character. Repeating 3 times.
         // <-start--
-        final String regex = null;
+        final String regex = "(\\w ){3}";
         // --end-->
 
         final String text = "a b c d e 2 ";
