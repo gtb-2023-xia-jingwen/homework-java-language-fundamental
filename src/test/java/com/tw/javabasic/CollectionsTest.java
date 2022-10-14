@@ -154,6 +154,14 @@ class CollectionsTest {
         // https://juejin.cn/post/6844903446349512712#heading-5
         // <-start-
 
+        for(Character ch : text.toCharArray()) {
+            if (!Character.isLetter(ch)) continue;
+            char k = Character.toLowerCase(ch);
+            histogram.put(k, histogram.getOrDefault(k, 0) + 1);
+        }
+        for (char k = 'a'; k <= 'z'; k++) {
+            if (!histogram.containsKey(k)) histogram.put(k, 0);
+        }
 
         // --end->
 
