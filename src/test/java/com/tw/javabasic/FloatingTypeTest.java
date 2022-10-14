@@ -52,7 +52,7 @@ class FloatingTypeTest {
         //  The reference is here:
         //  https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html#round-double-
         // <!--start
-        final long rounded = Long.MAX_VALUE;
+        final long rounded = Math.round(floatingPointNumber);
         // --end-->
 
         assertEquals(3L, rounded);
