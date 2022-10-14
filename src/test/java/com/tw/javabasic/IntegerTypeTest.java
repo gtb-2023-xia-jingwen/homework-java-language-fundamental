@@ -80,7 +80,7 @@ class IntegerTypeTest {
         // TODO:
         //  please modify the following lines to pass the test. Please refer to page 60 of "Core Java Vol 1", section 3.5.3.
         // <!--start
-        final short expected = 0;
+        final short expected = 0x4567;
         // --end-->
 
         assertEquals(expected, smallerInteger);
