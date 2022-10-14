@@ -90,6 +90,12 @@ class ArrayTest {
         //  If you meet difficulties, please refer to https://www.baeldung.com/java-invert-array.
         // <--start-
 
+        int len = originalArray.length;
+        reversed = new String[len];
+        int j = 0;
+        for(int i = len - 1; i >= 0; i--)
+            reversed[j++] = originalArray[i];
+
         // --end->
 
         assertArrayEquals(new String[] {"fox", "brown", "quick", "A"}, reversed);
