@@ -3,7 +3,12 @@ package com.tw.javabasic;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import com.tw.javabasic.util.Match;
+
+import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import org.junit.jupiter.api.Test;
 
 class RegexTest {
@@ -33,7 +38,17 @@ class RegexTest {
         //  Please implement the method to find all matches in the `text` against specified
         //  regular expression.
         // <--start-
-        throw new RuntimeException();
+        List<Match> res = new ArrayList<>();
+        Pattern p = Pattern.compile(regex);
+        Matcher m = p.matcher(text);
+        while (m.find()) {
+            String ms = m.group();
+            int start = m.start();
+            int end = m.end();
+            Match match = new Match(ms, start, end);
+            res.add(match);
+        }
+        return res;
         // --end-->
     }
 
