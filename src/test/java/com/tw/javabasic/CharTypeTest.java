@@ -39,7 +39,7 @@ class CharTypeTest {
         // TODO: Please fill out the line-break character(s) depending on your OS.
         //
         // <-start-
-        String linebreak = "";
+        String linebreak = "\r\n";
         // --end->
 
         String os = System.getProperty("os.name").toLowerCase();
