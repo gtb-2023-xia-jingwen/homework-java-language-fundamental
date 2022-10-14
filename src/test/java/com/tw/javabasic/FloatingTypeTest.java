@@ -67,7 +67,7 @@ class FloatingTypeTest {
         // Hint:
         //  Please check methods in Double class.
         // <!--start
-        throw new RuntimeException("Not implemented");
+        return Double.isNaN(realNumber);
         // --end-->
     }
 
@@ -80,7 +80,7 @@ class FloatingTypeTest {
         // Hint:
         //  Please check methods in Double class.
         // <!--start
-        throw new RuntimeException("Not implemented");
+        return Double.isInfinite(realNumber);
         // --end-->
     }
 }
