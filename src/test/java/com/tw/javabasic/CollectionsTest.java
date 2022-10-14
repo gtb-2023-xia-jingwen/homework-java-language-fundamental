@@ -4,14 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertIterableEquals;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+
 import org.junit.jupiter.api.Test;
 
 class CollectionsTest {
@@ -49,6 +43,14 @@ class CollectionsTest {
         // Hint:
         //  If you meet difficulties, please refer to "Core Java Vol 1", section 9.1.3.
         // <-start-
+
+        HashSet<String> existItems = new HashSet<>();
+        withoutDuplication = new ArrayList<>();
+        for (String item : listWithDuplication) {
+            if (existItems.contains(item)) continue;
+            existItems.add(item);
+            withoutDuplication.add(item);
+        }
 
         // --end->
 
