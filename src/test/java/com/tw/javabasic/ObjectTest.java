@@ -107,7 +107,7 @@ class ObjectTest {
         // Hint
         //  If you find it difficult, please check page 164 of "Core Java Vol 1", section 4.5.
         // <--start
-        final Object expected = new Object();
+        final Object expected = sameReference;
         // --end-->
 
         assertEquals(expected, objectReference);
