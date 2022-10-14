@@ -94,7 +94,7 @@ class InnerClassTest {
         // Hint:
         //  And if you want some references, please check page 346 of "Core Java Vol 1", section 6.4.7.
         // <--start
-        final String expected = "";
+        final String expected = "Hello";
         // --end-->
 
         assertEquals(expected, inner.getName());
