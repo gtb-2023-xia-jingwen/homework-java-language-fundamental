@@ -119,6 +119,9 @@ class CollectionsTest {
         //   do sorting work. You should not use Streaming API.
         // <-start-
 
+        sorted = new ArrayList<>(unsorted);
+        Collections.sort(sorted);
+
         // --end-->
 
         assertEquals(Arrays.asList(1, 6, 2, 4, 33, 76, 8, 9), unsorted);
