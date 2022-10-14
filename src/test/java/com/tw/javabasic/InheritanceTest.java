@@ -251,7 +251,7 @@ class InheritanceTest {
         // Please open PersonForEquals.java
         PersonForEquals person = new PersonForEquals("James", (short) 1990);
 
-        //assertEquals(null, person);
+//        assertEquals(null, person);
         assertFalse(person.equals(null));
     }
 

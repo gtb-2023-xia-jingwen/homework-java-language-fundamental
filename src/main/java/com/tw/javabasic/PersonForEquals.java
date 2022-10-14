@@ -74,7 +74,14 @@ public class PersonForEquals {
         //
         //  You can refer to page 235 of "Core Java Vol 1", section 5.2.3.
         // <--start
-        throw new RuntimeException("Not implemented");
+
+        int result = 17;
+        if (name != null) {
+            result = 31 * result + name.hashCode();
+        }
+        result = 31 * result + Short.hashCode(yearOfBirth);
+        return result;
+
         // --end-->
     }
 }
