@@ -166,7 +166,7 @@ class InheritanceTest {
         // TODO:
         //  You should write the answer directly.
         // <--start
-        final String expected = "";
+        final String expected = "BaseClassWithName";
         // --end-->
 
         assertEquals(expected, derived.getName());
