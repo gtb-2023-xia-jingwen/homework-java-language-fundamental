@@ -30,6 +30,8 @@ class CollectionsTest {
         //  If you meet difficulties, please refer to https://www.baeldung.com/java-collection-toarray-methods.
         // <-start-
 
+        array = arrayCollection.toArray(new String[]{});
+
         // --end-->
 
         assertArrayEquals(new String[] {"Amy", "Bob", "Carl"}, array);
