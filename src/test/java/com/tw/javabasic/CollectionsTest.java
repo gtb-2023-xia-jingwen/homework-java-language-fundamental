@@ -85,6 +85,8 @@ class CollectionsTest {
         // TODO: sum all the numbers. You should not use Streaming API.
         // <-start-
 
+        for(int num : numbers) sum += num;
+
         // --end->
 
         assertEquals(55, sum);
