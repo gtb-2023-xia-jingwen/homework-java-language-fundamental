@@ -5,6 +5,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 class ArrayTest {
     @Test
     void should_resize_array() {
@@ -42,6 +44,10 @@ class ArrayTest {
         // Hint:
         //  If you meet difficulties, please refer to https://www.baeldung.com/java-array-copy.
         // <--start
+
+        int len = originalArray.length;
+        first2Elements = Arrays.copyOfRange(originalArray, 0, len / 2);
+        last3Elements = Arrays.copyOfRange(originalArray, len / 2, len);
 
         // -end->
 
