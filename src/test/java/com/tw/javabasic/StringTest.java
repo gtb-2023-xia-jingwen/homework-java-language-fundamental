@@ -60,7 +60,7 @@ class StringTest {
         // Hint:
         //  If you find it difficult, please check page 60 of "Core Java Vol 1", section 3.6.1.
         // <--start
-        final String partOfString = null;
+        final String partOfString = originalString.substring(5);
         // --end-->
 
         final String expectedString = "is great";
