@@ -214,7 +214,7 @@ class StringTest {
         // Hint:
         //  If you meet difficulties, please refer to "Core Java Vol 1", section 3.7.2.
         // <--start
-        final String expectedText = "";
+        final String expectedText = "Hello, Harry. Next year, you will be 23.";
         // --end-->
 
         assertEquals(expectedText, text);
