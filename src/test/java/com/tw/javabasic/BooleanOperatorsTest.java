@@ -23,7 +23,16 @@ class BooleanOperatorsTest {
         //  If you meet difficulties, please refer to page 62 of "Core Java Vol 1", section 3.5.6
         //  and 3.5.7.
         // <-start-
-        throw new RuntimeException();
+        boolean res = true;
+        int lessThanZeroCnt = 0;
+        if(score.getTestCases() < 0.0) lessThanZeroCnt++;
+        if(score.getRequirement() < 0.0) lessThanZeroCnt++;
+        if(score.getCodeFormat() < 0.0) lessThanZeroCnt++;
+        if(score.getCodeDetails() < 0.0) lessThanZeroCnt++;
+        if (lessThanZeroCnt >= 2 || score.getFinalScore() < 0.0)
+            res = false;
+        return res;
+
         // --end->
     }
 
