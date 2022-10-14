@@ -16,13 +16,13 @@ class CharTypeTest {
         // Hint:
         //  If you meet difficulties, please refer to page 50 of "Core Java Vol 1", section 3.3.3.
         // <-start--
-        final char backspace = ' ';
-        final char tab = ' ';
-        final char lineFeed = ' ';
-        final char carriageReturn = ' ';
-        final char doubleQuote = ' ';
-        final char singleQuote = ' ';
-        final char backslash = ' ';
+        final char backspace = '\b';
+        final char tab = '\t';
+        final char lineFeed = '\n';
+        final char carriageReturn = '\r';
+        final char doubleQuote = '"';
+        final char singleQuote = '\'';
+        final char backslash = '\\';
         // --end-->
 
         Assertions.assertEquals(EscapedChars.BACKSPACE.getValue(), backspace);
