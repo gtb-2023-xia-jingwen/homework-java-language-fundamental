@@ -35,7 +35,7 @@ class FloatingTypeTest {
         // Hint:
         //  If you find it difficult, please check page 60 of "Core Java Vol 1", section 3.5.3.
         // <!--start
-        final int expected = Integer.MAX_VALUE;
+        final int expected = 2;
         // --end-->
 
         assertEquals(expected, integer);
