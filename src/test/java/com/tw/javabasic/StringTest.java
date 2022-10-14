@@ -168,7 +168,15 @@ class StringTest {
         // Hint:
         //  If you find it difficult, please check https://www.baeldung.com/java-reverse-string.
         // <--Start
-        final String reversed = null;
+        char[] chs = original.toCharArray();
+        int i = 0, j = chs.length - 1;
+        while (i < j) {
+            char tmp = chs[i];
+            chs[i] = chs[j];
+            chs[j] = tmp;
+            i++; j--;
+        }
+        final String reversed = new String(chs);
         // --End-->
 
         assertEquals("654321", reversed);
