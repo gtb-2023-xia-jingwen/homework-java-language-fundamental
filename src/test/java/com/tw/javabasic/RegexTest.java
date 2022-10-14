@@ -94,7 +94,7 @@ class RegexTest {
         // TODO:
         //  Please create an expression which extract English words "dog".
         // <-start--
-        final String regex = null;
+        final String regex = "\\bdog\\b";
         // --end-->
 
         final String text = "The quick browndog jumps over a lazy dog.";
