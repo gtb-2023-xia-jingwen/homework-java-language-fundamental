@@ -96,8 +96,8 @@ class IntegerTypeTest {
         //  please modify the following code to pass the test. You should write the
         //  result directly.
         // <--start
-        final int expectedCurrentInteger = 0;
-        final int expectedResult = 0;
+        final int expectedCurrentInteger = 4;
+        final int expectedResult = 3;
         // --end-->
 
         assertEquals(expectedCurrentInteger, integer);
