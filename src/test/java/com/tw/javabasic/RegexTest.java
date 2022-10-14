@@ -59,7 +59,7 @@ class RegexTest {
         //  ends with 't'. The interval should contains one or more lowercase English
         //  characters.
         // <-start--
-        final String regex = null;
+        final String regex = "b[a-z]*t";
         // --end-->
 
         final String text = "the bat is the best";
