@@ -103,6 +103,8 @@ class CollectionsTest {
         //  If you meet difficulties, please refer to https://www.baeldung.com/java-sorting.
         // <-start-
 
+        Collections.sort(numbers);
+
         // --end-->
 
         assertEquals(Arrays.asList(1, 2, 4, 6, 8, 9, 33, 76), numbers);
