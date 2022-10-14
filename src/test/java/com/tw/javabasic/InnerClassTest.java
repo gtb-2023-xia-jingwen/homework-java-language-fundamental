@@ -23,7 +23,7 @@ class InnerClassTest {
         // Hint:
         //  If you want some references, please check page 331 of "Core Java Vol 1", section 6.4.1.
         // <--start
-        final Integer expected = null;
+        final Integer expected = 2019;
         // --end-->
 
         assertEquals(expected, instance.getYear());
