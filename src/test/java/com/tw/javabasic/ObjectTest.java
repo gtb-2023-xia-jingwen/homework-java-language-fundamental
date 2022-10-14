@@ -59,9 +59,9 @@ class ObjectTest {
         // Hint
         //  If you find it difficult, please check page 172 of "Core Java Vol 1", section 4.6.2.
         // <--start
-        final String expectedName = "expected";
-        final int expectedYearOfBirth = Integer.MAX_VALUE;
-        final LocalDate expectedRegisteredDate = LocalDate.now();
+        final String expectedName = null;
+        final int expectedYearOfBirth = 0;
+        final LocalDate expectedRegisteredDate = null;
         // --end-->
 
         assertEquals(expectedName, instance.getName());
