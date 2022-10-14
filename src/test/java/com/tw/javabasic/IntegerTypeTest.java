@@ -64,8 +64,8 @@ class IntegerTypeTest {
         // Hint:
         //  If you want some reference please see page 59 of "Core Java Vol 1", section 3.5.2.
         // <!--start
-        final double expectedResult1 = Double.NaN;
-        final double expectedResult2 = Double.NaN;
+        final double expectedResult1 = 0.0;
+        final double expectedResult2 = 3.0;
         // --end-->
 
         assertEquals(expectedResult1, result1, +1.0E-05);
