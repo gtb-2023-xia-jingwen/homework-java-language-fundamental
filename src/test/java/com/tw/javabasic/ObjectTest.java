@@ -43,7 +43,7 @@ class ObjectTest {
         // TODO:
         //  Please write down your answer directly.
         // <--start
-        final boolean expected = true;
+        final boolean expected = false;
         // --end-->
 
         assertEquals(expected, referenceToSameObject);
