@@ -214,7 +214,7 @@ class ObjectTest {
         // Hint:
         //  If you find it difficult, please check page 256 of "Core Java Vol 1", section 5.5.
         // <--start
-        final String expected = "";
+        final String expected = "1\n2\n3\n";
         // --end-->
 
         assertEquals(expected, message);
