@@ -132,7 +132,11 @@ class IntegerTypeTest {
         //  here please refer to the following document:
         //  https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html#addExact-int-int-
         // <--start
-        throw new RuntimeException("Not implemented");
+        int res = left + right;
+        if ((left > 0 && right > 0 && res < 0) || (left < 0 && right < 0 &&  res > 0)) {
+            throw new ArithmeticException();
+        }
+        return res;
         // --end-->
     }
 }
