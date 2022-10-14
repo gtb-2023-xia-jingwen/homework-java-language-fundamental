@@ -204,8 +204,8 @@ class InheritanceTest {
         // Hint:
         //  If you find it difficult, please refer to page 220 of "Java Core Vol 1", section 5.1.8.
         // <--start
-        final boolean expectedResult1 = false;
-        final boolean expectedResult2 = true;
+        final boolean expectedResult1 = true;
+        final boolean expectedResult2 = false;
         // --end-->
 
         assertEquals(expectedResult1, integer instanceof Integer );
