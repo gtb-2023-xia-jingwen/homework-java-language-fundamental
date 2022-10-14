@@ -68,6 +68,11 @@ class ArrayTest {
         //  If you meet difficulties, please refer to https://www.baeldung.com/java-iterate-list.
         // <-start-
 
+        StringBuilder builder = new StringBuilder();
+        for(int num : originalArray)
+            builder.append(num);
+        destination = builder.toString();
+
         // --end->
 
         assertEquals("12345", destination);
