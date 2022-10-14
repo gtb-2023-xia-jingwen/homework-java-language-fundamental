@@ -66,6 +66,10 @@ class CollectionsTest {
         //   words. You should not use Streaming API.
         // <-start-
 
+        while (iterator.hasNext()) {
+            cloned.add(iterator.next().toUpperCase());
+        }
+
         // --end-->
 
         assertIterableEquals(
