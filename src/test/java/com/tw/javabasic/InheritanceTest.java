@@ -45,7 +45,7 @@ class InheritanceTest {
         // Hint:
         //  If you find it difficult, please check page 207 of "Core Java Vol 1", section 5.1.3.
         // <--start
-        final String[] expected = {};
+        final String[] expected = instance.getLogger();
         // --end-->
 
         String[] logs = instance.getLogger();
