@@ -41,7 +41,8 @@ class StringTest {
         // Hint:
         //  If you find it difficult, please check https://www.javaprogramto.com/2019/02/Java-11-String-strip.html.
         // <--start
-        final boolean areSame = true;
+        final boolean areSame = false;
+        // Reason: the original string dose not change
         // --end-->
 
         assertEquals("The string with tailing space.", modifiedString);
