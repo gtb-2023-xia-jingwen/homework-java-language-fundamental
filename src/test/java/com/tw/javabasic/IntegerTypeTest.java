@@ -18,7 +18,7 @@ class IntegerTypeTest {
         // Hint:
         //  If you find it difficult, please check "Core Java Vol 1", section 3.3.1
         // <--start
-        final int expectedResult = 0;
+        final int expectedResult = Integer.MIN_VALUE;
         // --end-->
 
         assertEquals(expectedResult, theNumberWillOverflow);
