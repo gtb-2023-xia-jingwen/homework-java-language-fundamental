@@ -100,7 +100,7 @@ class InheritanceTest {
         // TODO:
         //  You should write the answer directly.
         // <--start
-        final String expectedName = "";
+        final String expectedName = "DerivedFromBaseClassForOverriding";
         // --end-->
 
         assertEquals(expectedName, instance.getName());
