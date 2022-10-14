@@ -183,9 +183,9 @@ class InheritanceTest {
         // Hint:
         //  If you find it difficult, please refer to page 220 of "Java Core Vol 1", section 5.1.8.
         // <--start
-        final boolean expectedResult1 = false;
-        final boolean expectedResult2 = false;
-        final boolean expectedResult3 = false;
+        final boolean expectedResult1 = true;
+        final boolean expectedResult2 = true;
+        final boolean expectedResult3 = true;
         // --end-->
 
         assertEquals(expectedResult1, nested instanceof NestedDerivedClassWithName);
