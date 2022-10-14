@@ -29,7 +29,7 @@ class InheritanceTest {
         // Hint:
         //  If you find it difficult, please check the page 228 of "Core Java Vol 1", section 5.2.
         // <--start
-        final Class<?> expectedSuperClass = null;
+        final Class<?> expectedSuperClass = SimpleEmptyClass.class.getSuperclass();
         // --end-->
 
         assertEquals(expectedSuperClass, SimpleEmptyClass.class.getSuperclass());
